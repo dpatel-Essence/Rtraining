@@ -1,0 +1,78 @@
+---
+title: "Configure_Rstudio"
+author: "Darshan Patel"
+date: "7/24/2022"
+output: 
+  html_notebook
+
+---
+
+At the top of the document in the YAML (Which is a recursive term that means YAML ain't markup language). This has a variety of configuration options in how the Meta attributes of the document are defined.
+
+Changing output to html_notebook from html_output
+
+Some common changes include sys date, theme, numbering sections, more documentation on YAML here:
+
+setting up a git folder
+
+YAML thoughts
+
+projects
+
+Project Options - saving environment.History, rData options.
+
+Markdown, HTML, CSS, and visual markdown editor
+
+Setup chunk, chunk options, naming chunks
+
+Loading in libraries with pacman
+
+Styler
+
+Global environment
+
+Tab Autocomplete
+
+google sheets
+
+dataframes, tibbles, lists, vectors, matrixes
+
+skim, glimpse, str, summary data
+Piping data
+double ==
+Group_by, summarizing, filter, select, mutate/transmute, case_when
+na data in R
+
+lapply vs. while loop
+
+GGPlot2 in R
+
+Python in R
+
+
+This is the set-up chunk
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
